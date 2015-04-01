@@ -36,17 +36,18 @@ set tabstop=4
 set autoindent
 set modeline
 set autochdir
-set fileencodings=utf-8,gb2312,gbk,gb18030
 set number
 set ls=2
 set statusline=%4*%<\ %1*[%F]
 set statusline+=%4*\ %5*[%{&fileencoding}, " encoding
 set statusline+=%{&fileformat}%{\"\".((exists(\"+bomb\")\ &&\ &bomb)?\",BOM\":\"\").\"\"}]%m
 set statusline+=%4*%=\ %6*%y%4*\ [POS=%4*%l,%3*%c]\ \<PER=%2*%P%4*\>
-set encoding=prc
+set encoding=utf-8
+let &termencoding=&encoding
+set paste
 autocmd FileType js,c,cpp,java set shiftwidth=4 | set expandtab
 set langmenu=zh_CN.UTF-8
-set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
+set fileencodings=utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 syntax enable
 syntax on
 colorscheme mustang
