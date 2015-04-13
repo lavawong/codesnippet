@@ -21,12 +21,13 @@ set nocompatible
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
-
-if has("vms")
-set nobackup        " do not keep a backup file, use versions instead
-else
-set backup        " keep a backup file
-endif
+set nobackup
+" if has("vms")
+" set nobackup        " do not keep a backup file, use versions instead
+" else
+" set backup        " keep a backup file
+" endif
+set ignorecase
 set history=50          " keep 50 lines of command line history
 set ruler          " show the cursor position all the time
 set showcmd          " display incomplete commands
@@ -71,6 +72,11 @@ syntax on
 set hlsearch
 endif
 
+if &diff
+    " diff mode
+    set diffopt+=iwhite
+endif
+
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
 
@@ -108,6 +114,7 @@ if has("autocmd")
     command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis
     \ | wincmd p | diffthis
 let Tlist_Inc_Winwidth=0
+let mapleader=","
 " setlocal foldlevel=1
 " open javascript fold
 " let b:javascript_fold=1
