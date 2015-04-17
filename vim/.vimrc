@@ -32,11 +32,11 @@ set history=50          " keep 50 lines of command line history
 set ruler          " show the cursor position all the time
 set showcmd          " display incomplete commands
 set incsearch          " do incremental searching
-set shiftwidth=4
-set tabstop=4
-set autoindent
+set shiftwidth=2
+set tabstop=2
 set modeline
 set autochdir
+set autoindent
 set number
 set ls=2
 set statusline=%4*%<\ %1*[%F]
@@ -103,11 +103,11 @@ if has("autocmd")
 
     augroup END
 
-    else
+else
 
     set autoindent        " always set autoindenting on
 
-    endif " has("autocmd")
+endif " has("autocmd")
 
     " Convenient command to see the difference between the current buffer and the
     " file it was loaded from, thus the changes you made.
