@@ -46,7 +46,8 @@ set statusline+=%4*%=\ %6*%y%4*\ [POS=%4*%l,%3*%c]\ \<PER=%2*%P%4*\>
 set encoding=utf-8
 let &termencoding=&encoding
 set paste
-autocmd FileType js,c,cpp,java set shiftwidth=4 | set expandtab
+autocmd FileType py,c,cpp,java set shiftwidth=4 | set expandtab
+autocmd BufNewFile,BufRead *.node set filetype=javascript
 set langmenu=zh_CN.UTF-8
 set fileencodings=utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 syntax enable
