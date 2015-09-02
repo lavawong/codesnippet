@@ -1,10 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
-let g:netrw_dirhist_1='/Users/LavaWong/workspace/news/zhifou/trunk/html/demo'
-let g:netrw_dirhist_2='/Users/LavaWong/workspace/news/zhifou/trunk/html'
-let g:netrw_dirhist_3='/Users/LavaWong/workspace/news/zhifou/trunk'
-let g:netrw_dirhist_4='/Users/LavaWong/workspace/news/zhifou'
-let g:netrw_dirhist_5='/Users/LavaWong/workspace/news'
-let g:netrw_dirhist_6='/Users/LavaWong/workspace/news/TheSituationRoom'
-let g:netrw_dirhist_7='/Users/LavaWong/workspace/news/TheSituationRoom/trunk'
-let g:netrw_dirhist_8='/Users/LavaWong/workspace/news/TheSituationRoom/trunk/html'
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/Users/lavawong/workspace/test'
+let g:netrw_dirhist_2='/Users/lavawong/workspace/test/src'
+let g:netrw_dirhist_3='/Users/lavawong/workspace/test/src/js/common'
+let g:netrw_dirhist_4='/usr/local/etc/nginx'
