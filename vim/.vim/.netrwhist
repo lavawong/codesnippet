@@ -1,6 +1,6 @@
 let g:netrw_dirhistmax  =10
 let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/Users/lavawong/workspace/test'
-let g:netrw_dirhist_2='/Users/lavawong/workspace/test/src'
-let g:netrw_dirhist_3='/Users/lavawong/workspace/test/src/js/common'
-let g:netrw_dirhist_4='/usr/local/etc/nginx'
+let g:netrw_dirhist_1='/Users/lavawong/workspace/dp/client/src/module'
+let g:netrw_dirhist_2='/Users/lavawong/workspace/dp/client/src/module/realtime'
+let g:netrw_dirhist_3='/Users/lavawong/workspace/dp/www/static/css'
+let g:netrw_dirhist_4='/Users/lavawong/workspace/dp/client/src/module/realtime'
